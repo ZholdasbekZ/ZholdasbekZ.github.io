@@ -25,6 +25,9 @@ a, #h4  {
 	height:40px;
 
 }
+li:hover {
+	background:#114a63;
+}
 body{
 	background: linear-gradient(#35ce94,#59adea);
 }
