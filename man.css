@@ -29,5 +29,5 @@ li:hover {
 	background:#114a63;
 }
 body{
-	background: linear-gradient(#35ce94,#59adea);
+	background: linear-gradient(to left, #35ce94,#59adea);
 }
