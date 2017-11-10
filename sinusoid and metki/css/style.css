@@ -1,0 +1,103 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#block{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#left{
+  margin: 0;
+  padding: 0;
+  background: blue;
+  width: 50vw;
+  height: 100vh;
+  display: inline-block;
+}
+#right{
+  display: inline-block;
+}
+.cont{
+  position: relative;
+  top: 50px;
+  left: 20px;
+  width: 750px;
+  height: 700px;
+  background: yellow;
+}
+#pust{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  background: #fff;
+}
+.game{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 300px;
+  background: green;
+  font-size: 20px;
+}
+.game1{
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 247px;
+  height: 300px;
+  background: #00FF00;
+}
+.game1 > h1{
+  text-align: center;
+}
+.game1 > p{
+  text-align: center;
+}
+.game1 > .btns{
+  height: 50px;
+  width: 250px;
+}
+.btns > button{
+  height: 50px;
+  width: 80px;
+  
+}
+#result > div{
+  text-align: center;
+  float: left;
+  height: 50px;
+  width: 80px;
+  opacity: 0;
+}
+#gal, #iks, #gal2, #iks2, #gal3, #iks3{
+  opacity: 0;
+}
+
+#moved{
+  width:10px; 
+  height:10px;
+  position: absolute;
+  border-radius:100%;
+  background:#aa00aa;
+  transform: translate3d(0px, 530px, 0px); //Начальная позиция отлеть от кнопки 
+  z-index: 0;
+  opacity: 0 ;
+  transition: transform .2s ease-in-out;
+
+}
+/*
+#moved:hover {
+   animation: anime 2s infinite;
+
+}
+@keyframes anime {
+  0%{transform: translate3d(0px, 0px, 0px);}
+  100%{transform: translate3d(100px, 100px, 0px);}*/
