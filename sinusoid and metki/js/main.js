@@ -33,12 +33,10 @@ function sqr5() {
 	document.getElementById('dp_1_res').style.opacity="1";
 	document.getElementById('gal').style.opacity='0';
 	document.getElementById('iks').style.opacity='0';
-	document.getElementById('moved').style.opacity='1';
-	ctx.fillStyle = "#00FF00";
-	ctx.fillRect(x*20,183+100*y,10,10);  // обычная метка
+	/*document.getElementById('moved').style.opacity='1';
     if (move_i==0){  // Ограничение чтобы Аним.метка ставилась один раз
 
-		function getSupportedPropertyName(properties) {
+	    function getSupportedPropertyName(properties) {
 		    for (var i = 0; i < properties.length; i++) {
 		        if (typeof document.body.style[properties[i]] != "undefined") {
 		            return properties[i];
@@ -55,11 +53,10 @@ function sqr5() {
 		    item.style[transformProperty] = 'translate3d('+ xPosition+'px, '+yPosition + 'px, 0px)'; 
 		}
 		move_i++;  // Ограничение чтобы Аним.метка ставилась один раз
-	}
-
-
-
+	}*/
 }
+
+
 function sqr55() {
 	document.getElementById('dp_1_res').innerHTML="5<sup>2</sup>";
 	document.getElementById('dp_1_res').style.opacity="1";
@@ -73,20 +70,26 @@ function rs4() {
 	document.getElementById('dp_1_res').style.opacity="1";
 	document.getElementById('gal').style.opacity='0';
 	document.getElementById('iks').style.opacity='0';
-	ctx.fillStyle = "#FF77FF";
-	ctx.fillRect(20*x,183+100*y,10,10);
 }
 function gal() {
 	document.getElementById('gal').style.opacity='1';
 	document.getElementById('iks').style.opacity='1';
+	if (document.getElementById('dp_1_res').innerHTML=="5")
+	{ctx.fillStyle = "#00FF00";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+	if (document.getElementById('dp_1_res').innerHTML=="4")
+	{ctx.fillStyle = "#FF77FF";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+	if (document.getElementById('dp_1_res').innerHTML=="5<sup>2</sup>")
+	{ctx.fillStyle = "#1500ff";
+	ctx.fillRect(x*20,183+100*y,10,10);}
 }
 function sqr52() {
 	document.getElementById('dp_2_res').innerHTML="5";
 	document.getElementById('dp_2_res').style.opacity="1";
 	document.getElementById('gal2').style.opacity='0';
 	document.getElementById('iks2').style.opacity='0';
-	ctx.fillStyle = "#00FF00";
-	ctx.fillRect(x*20,183+100*y,10,10);
+	
 }
 function sqr552() {
 	document.getElementById('dp_2_res').innerHTML="5<sup>2</sup>";
@@ -99,40 +102,52 @@ function rs42() {
 	document.getElementById('dp_2_res').style.opacity="1";
 	document.getElementById('gal2').style.opacity='0';
 	document.getElementById('iks2').style.opacity='0';
-	ctx.fillStyle = "#FF77FF";
-	ctx.fillRect(x*20,183+100*y,10,10);
 }
 function gal2() {
 	document.getElementById('gal2').style.opacity='1';
 	document.getElementById('iks2').style.opacity='1';
+	if (document.getElementById('dp_2_res').innerHTML=="5")
+	{ctx.fillStyle = "#00FF00";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+	if (document.getElementById('dp_2_res').innerHTML=="4")
+	{ctx.fillStyle = "#FF77FF";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+	if (document.getElementById('dp_2_res').innerHTML=="5<sup>2</sup>")
+	{ctx.fillStyle = "#1500ff";
+	ctx.fillRect(x*20,183+100*y,10,10);}
 }
 function sqr53() {
 	document.getElementById('dp_3_res').innerHTML="5";
 	document.getElementById('dp_3_res').style.opacity="1";
 	document.getElementById('gal3').style.opacity='0';
 	document.getElementById('iks3').style.opacity='0';;
-	ctx.fillStyle = "#00FF00";
-	ctx.fillRect(x*20,183+100*y,10,10);
+	
 }
 function sqr553() {
 	document.getElementById('dp_3_res').innerHTML="5<sup>2</sup>";
 	document.getElementById('dp_3_res').style.opacity="1";
 		document.getElementById('gal3').style.opacity='0';
 	document.getElementById('iks3').style.opacity='0';
-		ctx.fillStyle = "#00FF00";
-	ctx.fillRect(x*20,183+100*y,10,10);
 }
 function rs43() {
 	document.getElementById('dp_3_res').innerHTML="4";
 	document.getElementById('dp_3_res').style.opacity="1";
 		document.getElementById('gal3').style.opacity='0';
 	document.getElementById('iks3').style.opacity='0';
-	ctx.fillStyle = "#FF77FF";
-	ctx.fillRect(x*20,183+100*y,10,10);
 }
 function gal3() {
 	document.getElementById('gal3').style.opacity='1';
 	document.getElementById('iks3').style.opacity='1';
+	if (document.getElementById('dp_3_res').innerHTML=="5")
+	{ctx.fillStyle = "#00FF00";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+	if (document.getElementById('dp_3_res').innerHTML=="4")
+	{ctx.fillStyle = "#FF77FF";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+	if (document.getElementById('dp_3_res').innerHTML=="5<sup>2</sup>")
+	{ctx.fillStyle = "#1500ff";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+
 }
 
 
