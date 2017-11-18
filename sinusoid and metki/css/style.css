@@ -12,7 +12,7 @@ body {
   position: relative;
   top: 50px;
   left: 20px;
-  width: 807px;
+  width: 928px;
   height: 700px;
   background: yellow;
 }
@@ -37,7 +37,7 @@ body {
   padding-left:10px;
   padding-right:10px;
   float: left;
-  width: 247px;
+  width: 210px;
   height: 300px;
   background: #00FF00;
 }
@@ -54,7 +54,7 @@ body {
 .btns > button{
   font-family: times new roman;
   height: 50px;
-  width: 80px;
+  width: 67px;
   font-size: 25px;
   cursor: pointer;
   background: #59f9c1;
@@ -68,7 +68,7 @@ body {
   width: 60px;
   opacity: 0;
 }
-#gal, #iks, #gal2, #iks2, #gal3, #iks3{
+#gal, #iks, #gal2, #iks2, #gal3, #iks3,#gal4,#iks4{
   opacity: 0;
    font-size: 23px;
     cursor: pointer;

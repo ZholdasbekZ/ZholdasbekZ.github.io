@@ -6,25 +6,29 @@ var move_i=0;
 
 
 
-ctx.strokeStyle = "silver";
+var fon= function(){ctx.strokeStyle = "silver";
 
   for (var i = 0; i < canvas.width; i += 134) {
     for (var j = 0; j < canvas.height; j += 134) {
       ctx.strokeRect(i, j, 134, 134);
     }
   }
+}
 
 drawSin();
+fon();
 function drawSin(){
 	y = Math.sin(x);
-	if (x>=740){
+	if (x>=47){
 		x=0;
+		canvas.width = canvas.width;
+		fon();
 	}
 	else {
 		x=x+0.01;
 	}
 	ctx.fillRect(20*x,183+100*y, 2,2);
-	timer = setTimeout(drawSin, 100);  //Скорость синуса
+	timer = setTimeout(drawSin, 2400);  //Скорость синуса
 	ctx.fillStyle = "Black";
 }
 
@@ -33,7 +37,7 @@ function sqr5() {
 	document.getElementById('dp_1_res').style.opacity="1";
 	document.getElementById('gal').style.opacity='0';
 	document.getElementById('iks').style.opacity='0';
-	/*document.getElementById('moved').style.opacity='1';
+	document.getElementById('moved').style.opacity='1';
     if (move_i==0){  // Ограничение чтобы Аним.метка ставилась один раз
 
 	    function getSupportedPropertyName(properties) {
@@ -52,8 +56,8 @@ function sqr5() {
 		if (transformProperty) {             //анимированная метка.Некорректно работает
 		    item.style[transformProperty] = 'translate3d('+ xPosition+'px, '+yPosition + 'px, 0px)'; 
 		}
-		move_i++;  // Ограничение чтобы Аним.метка ставилась один раз
-	}*/
+		  // Ограничение чтобы Аним.метка ставилась один раз
+	}
 }
 
 
@@ -149,6 +153,40 @@ function gal3() {
 	ctx.fillRect(x*20,183+100*y,10,10);}
 
 }
+function sqr54() {
+	document.getElementById('dp_4_res').innerHTML="5";
+	document.getElementById('dp_4_res').style.opacity="1";
+	document.getElementById('gal4').style.opacity='0';
+	document.getElementById('iks4').style.opacity='0';
+	
+}
+function sqr554() {
+	document.getElementById('dp_4_res').innerHTML="5<sup>2</sup>";
+	document.getElementById('dp_4_res').style.opacity="1";
+	document.getElementById('gal4').style.opacity='0';
+	document.getElementById('iks4').style.opacity='0';
+}
+function rs44() {
+	document.getElementById('dp_4_res').innerHTML="4";
+	document.getElementById('dp_4_res').style.opacity="1";
+	document.getElementById('gal4').style.opacity='0';
+	document.getElementById('iks4').style.opacity='0';
+}
+function gal4() {
+	document.getElementById('gal4').style.opacity='1';
+	document.getElementById('iks4').style.opacity='1';
+	if (document.getElementById('dp_4_res').innerHTML=="5")
+	{ctx.fillStyle = "#00FF00";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+	if (document.getElementById('dp_4_res').innerHTML=="4")
+	{ctx.fillStyle = "#FF77FF";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+	if (document.getElementById('dp_4_res').innerHTML=="5<sup>2</sup>")
+	{ctx.fillStyle = "#1500ff";
+	ctx.fillRect(x*20,183+100*y,10,10);}
+}
+
+
 
 
 
@@ -192,7 +230,18 @@ function ren_3_5_3(){
 if (document.getElementById("dp_3_res").innerHTML=="5")
 	{document.getElementById("dp_1_4_3").innerHTML = "5";}
 }
-
+function ren_5_3_4(){
+		if (document.getElementById("dp_4_res").innerHTML=="5<sup>2</sup>")
+	{document.getElementById("dp_1_5_4").innerHTML = "3";} 
+if (document.getElementById("dp_4_res").innerHTML=="5")
+	{document.getElementById("dp_1_5_4").innerHTML = "4";}
+}
+function ren_3_5_4(){
+	if (document.getElementById("dp_4_res").innerHTML=="5<sup>2</sup>")
+	{document.getElementById("dp_1_3_4").innerHTML = "5";} 
+if (document.getElementById("dp_4_res").innerHTML=="5")
+	{document.getElementById("dp_1_4_4").innerHTML = "5";}
+}
 
 
 
