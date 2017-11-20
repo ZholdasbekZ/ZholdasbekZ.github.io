@@ -100,6 +100,22 @@ div[id$="res"]{
     border-radius:10px;
 }
 
+#lvl3{
+  font-size: 200%;
+  position: absolute;
+  top: 48%;
+}
+#lvl4{
+  font-size: 200%;
+  position: absolute;
+  top:29%;
+}
+#lvl5{
+  font-size: 200%;
+  position: absolute;
+  top: 10%
+}
+
 /*
 #moved:hover {
    animation: anime 2s infinite;

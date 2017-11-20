@@ -28,7 +28,7 @@ function drawSin(){
 		x=x+0.01;
 	}
 	ctx.fillRect(20*x,183+100*y, 2,2);
-	timer = setTimeout(drawSin, 2400);  //Скорость синуса
+	timer = setTimeout(drawSin, 1000);  //Скорость синуса
 	ctx.fillStyle = "Black";
 }
 
@@ -37,8 +37,8 @@ function sqr5() {
 	document.getElementById('dp_1_res').style.opacity="1";
 	document.getElementById('gal').style.opacity='0';
 	document.getElementById('iks').style.opacity='0';
-	document.getElementById('moved').style.opacity='1';
-    if (move_i==0){  // Ограничение чтобы Аним.метка ставилась один раз
+	document.getElementById('moved').style.opacity='0';
+   /* if (move_i==0){  
 
 	    function getSupportedPropertyName(properties) {
 		    for (var i = 0; i < properties.length; i++) {
@@ -53,11 +53,11 @@ function sqr5() {
 		var transformProperty = getSupportedPropertyName(transform);
 		 var xPosition = x*20 ;
 		 var yPosition = 183+100*y; 
-		if (transformProperty) {             //анимированная метка.Некорректно работает
+		if (transformProperty) {             
 		    item.style[transformProperty] = 'translate3d('+ xPosition+'px, '+yPosition + 'px, 0px)'; 
 		}
-		  // Ограничение чтобы Аним.метка ставилась один раз
-	}
+		
+	}*/
 }
 
 
