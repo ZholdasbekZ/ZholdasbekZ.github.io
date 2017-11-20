@@ -28,7 +28,7 @@ function drawSin(){
 		x=x+0.01;
 	}
 	ctx.fillRect(20*x,183+100*y, 2,2);
-	timer = setTimeout(drawSin, 570);  //Скорость синуса
+	timer = setTimeout(drawSin, 520);  //Скорость синуса
 	ctx.fillStyle = "Black";
 }
 
