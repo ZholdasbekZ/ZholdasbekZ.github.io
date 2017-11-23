@@ -1,8 +1,14 @@
+html{
+	background-image: url(htmlback.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 #mapa {
 	height: 700px;
 	width:1000px;
 	background: #8700a3;
 	margin: auto;
+	margin-top:100px; 
 	position: relative;
 	padding: 20px;
 	border-radius: 20px;
@@ -45,6 +51,7 @@ div [id^="kor"]{
 	background-repeat: no-repeat;
 	background-size: contain;
     z-index: 1; 
+    cursor: pointer;
 }
 #clone{
 	background: transparent;
@@ -52,6 +59,7 @@ div [id^="kor"]{
 	width: 100px;
 	background-repeat: no-repeat;
 	background-size: contain;
+	cursor: pointer;
 }
 div [id^="ball_"]{
 	position: absolute;
