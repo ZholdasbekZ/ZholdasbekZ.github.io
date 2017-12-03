@@ -2,12 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>&#10084;&#128139;</title>
+    <title>Я не знаю что это</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-3.2.1.js"></script>
  	 <script src="js/main.js" defer></script>
 </head>
-<body id="body">
-	
+<body>
+	<div id="rules_btn">
+    <button onclick="rulShow()">Правила</button>
+    </div>
 			<div class="cont">
 				<div id="pust">
 					<p id="lvl3">3</p>
@@ -18,13 +21,13 @@
 				<canvas id="c1" width="928px" height="400"></canvas></div>
 				<div class="game">
 					<div class="game1">
-						<h1>Deposit</h1>
+						<h1>Депозит</h1>
 						<div class="btns">
 							<button id="dp_1_5" onclick="sqr5()" ondblclick="sqr55()">5</button>
 							<button id="dp_1_4" onclick="rs4()">4</button>
 							<button id="dp_1_3">3</button>
 						</div>
-						<p>Lorem ipsum</p>
+						<p></p>
 						<div id="result">
 							<div id="dp_1_res" onclick="gal()"></div>
 							<div onclick="ren_3_5()" id="gal">V</div>
@@ -32,13 +35,13 @@
 						</div>
 					</div>
 					<div class="game1">
-						<h1>Deposit</h1>
+						<h1>Депозит</h1>
 						<div class="btns">
 							<button id="dp_1_5_2" onclick="sqr52()" ondblclick="sqr552()">5</button>
 							<button id="dp_1_4_2" onclick="rs42()">4</button>
 							<button id="dp_1_3_2">3</button>
 						</div>
-						<p>Lorem ipsum</p>
+						<p></p>
 						<div id="result">
 							<div id="dp_2_res" onclick="gal2()"></div>
 							<div onclick="ren_3_5_2()" id="gal2">V</div>
@@ -46,13 +49,13 @@
 						</div>
 					</div>
 					<div class="game1">
-						<h1>Deposit</h1>
+						<h1>Депозит</h1>
 						<div class="btns">
 							<button id="dp_1_5_3" onclick="sqr53()" ondblclick="sqr553()">5</button>
 							<button id="dp_1_4_3" onclick="rs43()">4</button>
 							<button id="dp_1_3_3">3</button>
 						</div>
-						<p>Lorem ipsum</p>
+						<p></p>
 						<div id="result">
 							<div id="dp_3_res" onclick="gal3()"></div>
 							<div onclick="ren_3_5_3()" id="gal3">V</div>
@@ -60,13 +63,13 @@
 						</div>
 					</div>
 					<div class="game1">
-						<h1>Deposit</h1>
+						<h1>Депозит</h1>
 						<div class="btns">
 							<button id="dp_1_5_4" onclick="sqr54()" ondblclick="sqr554()">5</button>
 							<button id="dp_1_4_4" onclick="rs44()">4</button>
 							<button id="dp_1_3_4">3</button>
 						</div>
-						<p>Lorem ipsum</p>
+						<p></p>
 						<div id="result">
 							<div id="dp_4_res" onclick="gal4()"></div>
 							<div onclick="ren_3_5_4()" id="gal4">V</div>
@@ -75,5 +78,17 @@
 					</div>
 				</div>
 			</div>
+	<div id="rules">
+		<a onclick="rulhide()">X</a> 
+		<center><h1>Правила</h1></center>
+		<p>У нас есть рабочая область. В рабочей области расположены четрые колонки. В каждой калонки размещены: кнопки</p>
+		<ul>
+			<li>Функциональная кнопка с надписью: 5</li>
+			<li>Функциональная кнопка с надписью: 4</li>
+			<li>нефункциональная кнопка с надписью: 3</li>
+		</ul>
+
+	
+    </div>
 </body>
 </html>

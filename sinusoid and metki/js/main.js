@@ -17,6 +17,7 @@ var fon= function(){ctx.strokeStyle = "silver";
 
 drawSin();
 fon();
+rulhide();
 function drawSin(){
 	y = Math.sin(x);
 	if (x>=47){
@@ -243,5 +244,11 @@ if (document.getElementById("dp_4_res").innerHTML=="5")
 	{document.getElementById("dp_1_4_4").innerHTML = "5";}
 }
 
+function rulShow(){
+	 $("#rules").show();
+}
 
+function rulhide(){
+	$("#rules").hide();
 
+}
