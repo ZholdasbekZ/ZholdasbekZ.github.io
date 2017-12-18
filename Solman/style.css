@@ -1,0 +1,36 @@
+header{
+ font-family: SEGOE PRINT;
+}
+.menu *{
+ margin: 0;
+ padding: 0;
+}
+.menu ul,
+.menu ol{
+ list-style: none;
+ 
+}
+.menu > ul{
+ 
+ justify-content: right;
+ 
+}
+
+.menu > ul li a{
+ display: block;
+background-color:black;
+width:150px;
+height:0 auto;
+
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.menu li a:hover{
+ color: red;
+ box-shadow: 11px 11px 15px 5px gray;
+ transition: all 1s ease;
+}
