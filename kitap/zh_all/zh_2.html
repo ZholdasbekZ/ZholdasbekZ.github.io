@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<ul class="menu">
+				<li class="menu_link"><a href="../index.html">Басты бет</a></li>
+				<li class="menu_link"><a href="../darister.html">Дәрістер</a></li>
+				<li class="menu_link"><a href="../zh_all/zh_1.html">Зертханалық жұмыстар</a></li>
+				<li class="menu_link"><a href="../glossary.html">Глоссарий</a></li>
+				<li class="menu_link"><a href="../adebiet.html">Әдебиет</a></li>
+			</ul>
+		</header>
+		<div class="box">
+			<div class="left">
+				<ol class="nav">
+					<li class="nav-item"><a href="zh_1.html">C# биоцентрлік координаттар негізінде үшбұрыштарды растеризациялау</a></li>
+					<li class="nav-item"><a href="zh_2.html">C# дата және уақыт</a></li>
+					<li class="nav-item"><a href="#3">C# көмегімен өзіміздің host пен ip-мекен-жайымызды анықтау</a></li>
+					<li class="nav-item"><a href="#4">C#-та қосу, азайту, көбейту, бөлу амалдары</a></li>
+					<li class="nav-item"><a href="#5">C#-та фибоначчи санының n-ші мүшесін табу</a></li>
+					<li class="nav-item"><a href="#6">C#-тағы кездейсоқ сандар. random функциясы</a></li>
+					<li class="nav-item"><a href="#7">Дәреже</a></li>
+					<li class="nav-item"><a href="#8">Екі санның қосындысын windows form-ға шығару</a></li>
+					<li class="nav-item"><a href="#9">Калькулятор</a></li>
+					<li class="nav-item"><a href="#10">Квадрат теңдеуін шешу</a></li>
+					<li class="nav-item"><a href="#11">Оятқыш</a></li>
+					<li class="nav-item"><a href="#12">Паскаль үшбұрышы</a></li>
+					<li class="nav-item"><a href="#13">Полиндром</a></li>
+					<li class="nav-item"><a href="#14">Проценттік ставканы есептейтін бағдарлама</a></li>
+					<li class="nav-item"><a href="#15">Санау жүйелері</a></li>
+					<li class="nav-item"><a href="#16">Спамер</a></li>
+					<li class="nav-item"><a href="#17">Сұрыптау</a></li>
+					<li class="nav-item"><a href="#18">Таймер</a></li>
+					<li class="nav-item"><a href="#19">Таңдау әдісі бойынша сұрыптау</a></li>
+					<li class="nav-item"><a href="#20">Фибоначчи сандары</a></li>
+					<li class="nav-item"><a href="#21">Экранның скриншотын жасау</a></li>
+				</ol>
+			</div>
+			<div class="right">
+					<div class="container">
+						<h2>C# ДАТА ЖӘНЕ УАҚЫТ</h2>
+						<p><b>Бүгін біз жүктеген кезде цифрлы сағат пен датаны көрсететін бағдарлама жасаймыз.</b></p>
+						<p>Алдымен келесі форманы жасаймыз:</p>
+						<img src="Zhimg2/1.jpg" alt="" class="zhimg">
+						<p>Мұнда 2-Label мен +Timer ғана бар.<br>
+						Өз қалауымызша Label-ді баптаймыз.
+						</p>
+						<p>Енді кодқа көшейік, Форманы тышқанның оң жағымен шертіп, сәйкес команданы таңдаймыз.</p>
+						<p><i>public partial class Form1 : Form</i> жолынан кейін бірден таймерді жариялаймыз.</p>
+						<p><b>Ол былай жасалынады:</b></p>
+						<pre><b>public partial class Form1 : Form
+{
+Timer timer = new Timer();
+						</b></pre>
+						<p>Оны ең басында жариялаймыз, себебі барлық жазылатын функциялар оны ескеруі керек.</p>
+						<p>Таймерді қосу үшін формаға барып, оны тышқанның сол жақ батырмасымен екі рет шертеміз.</p>
+						<p>Форма жүктелген кезде орындалатын кодқа көшеміз. Бұл жерге жазамыз:</p>
+						<pre><b>private void Form1_Load(object sender, EventArgs e)
+ {
+     timer.Interval = 1000; 
+     timer.Tick += new EventHandler(timer1_Tick);
+     timer.Start();         
+ }
+						</b></pre>
+						<p>Бірінші жол таймердің жаңару интервалын орнатады. 1000 саны таймердың әр 1000 миллисекунд, яғни 1 секунд сайын жаңаратынын білдіреді.</p>
+						<p>Екінші жол өте маңызды – ол таймердың қандай да бір «Tick» оқиғасы кезінде орындалады. 1000 миллисекунд сайын орындалады. Соның арқасында қолданушы циферблаттың өзгеруін көре алады. Оқиғаның өзін біз төменде timer1_Tick функциясында сипаттаймыз.</p>
+						<p>Үшінші жолда біз таймерді іске қосамыз.</p>
+						<p>Енді формаға оралып таймердың суретін   екі рет шертеміз.
+						Міне timer1_Tick функциясы ашылды. Мұнда белгілі бір код жазамыз және әр 1000 миллисекунд сайын бұл қайта орындалып отырады.
+						</p>
+						<p>Біздің функциямыздың ішінде алдымен кейбір айнымалыларды жариялаймыз:</p>
+						<pre><b>int h = DateTime.Now.Hour;
+int m = DateTime.Now.Minute;
+int s = DateTime.Now.Second;
+ 
+string time = "";
+					</b></pre>
+						<p>h айнымалысына сағат, m айнымалысына минут, s айнымалысына секунд жазамыз.</p>
+						<p>string типті Time айнымалысы бізге алғашқы үш айнымалыны формаға шығару үшін жазамыз.</p>
+						<pre><b>if (h < 10)
+ {
+     time += "0" + h;
+ }
+ else
+ {
+     time += h;
+ }
+ 
+ time += ":";
+ 
+ if (m < 10)
+ {
+     time += "0" + m;
+ }
+ else
+ {
+     time += m;
+ }
+ 
+ time += ":";
+ 
+ if (s < 10)
+ {
+     time += "0" + s;
+ }
+ else
+ {
+     time += s;
+ }
+</b></pre>
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

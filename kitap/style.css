@@ -1,0 +1,94 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 100%;
+}
+
+.container{
+	width: 830px;
+	padding-top: 100px;
+	margin-left: 200px;
+}
+header{
+	position: fixed;
+	border-bottom: 2px solid gray;
+	width: 100vw;
+	background: #fff;
+}
+.menu{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu_link > a{
+	text-decoration: none;
+	color: #000;
+}
+
+.logo{
+width: 500px;
+height: 500px;
+display: block;
+margin:auto;
+position: relative;
+top:250px;
+}
+
+.box{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.left{
+	width: 400px;
+	height: 100vh;
+	border-right: 2px solid gray;
+	padding: 10px;
+	position: fixed;
+	margin-top: 50px;
+	overflow-y: scroll;
+}
+
+.nav-item{
+	margin: 10px 0;
+}
+.nav_sub-item > a{
+	text-decoration: none;
+	color: #000;
+}
+
+.nav_sub-item > a:hover{
+	border-bottom: 1px solid gray;
+}
+.nav-item > a:hover{
+	border-bottom: 1px solid gray;
+}
+
+.nav-item > a{
+	text-decoration: none;
+	color: #000;
+}
+.right{
+	width: 100%;
+	margin-left: 400px;
+	overflow-x: hidden;
+	font-size: 20px;
+}
+.glosar>p{
+	font-size: 24px;
+	margin-bottom:50px;
+}
+.zhimg{
+	display: block;
+	margin: auto;
+}
+pre{
+	font-size: 14px;
+}
